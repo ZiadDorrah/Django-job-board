@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block body %} {% load bootstrap4 %}
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+
+</div>
+<!--/ bradcam_area  -->
+
+<div class="job_details_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="apply_job_form white-bg">
+                    {% block content %}
+                        
+                    {% endblock content %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+<button class="boxed-btn3 w-100" type="submit">Post Now</button>
