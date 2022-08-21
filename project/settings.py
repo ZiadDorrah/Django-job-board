@@ -41,11 +41,12 @@ INSTALLED_APPS = [
 
     # my apps
 
-    'blog',
+    # 'blog',
     'contact',
-    'home',
+    # 'home',
     'job',
     "bootstrap4",
+    'django_filters',
 ]
 
 MIDDLEWARE = [
