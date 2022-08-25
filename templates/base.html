@@ -57,7 +57,7 @@
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a href="/">home</a></li>
+                        <li><a href="{% url 'home:home_view' %}">home</a></li>
                         <li><a href="{% url 'jobs:job_list' %}">Browse Job</a></li>
                         <li><a href="{% url 'contact:contact' %}">Contact</a></li>
                       </ul>
