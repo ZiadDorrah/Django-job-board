@@ -28,6 +28,26 @@
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+      
+      /* Shrink */
+      .hvr-shrink {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+      }
+      .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+
+    </style>
   </head>
 
   <body>
@@ -57,9 +77,9 @@
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a href="{% url 'home:home_view' %}">home</a></li>
-                        <li><a href="{% url 'jobs:job_list' %}">Browse Job</a></li>
-                        <li><a href="{% url 'contact:contact' %}">Contact</a></li>
+                        <li><a class="hvr-shrink" href="{% url 'home:home_view' %}">home</a></li>
+                        <li><a class="hvr-shrink" href="{% url 'jobs:job_list' %}">Browse Job</a></li>
+                        <li><a class="hvr-shrink" href="{% url 'contact:contact' %}">Contact</a></li>
                       </ul>
                     </nav>
                   </div>
@@ -68,7 +88,7 @@
                   <div class="Appointment">
                     {% if request.user.is_authenticated %}
                       <div class="phone_num d-none d-xl-block">
-                        <a href="{% url 'accounts:profile' %}">Profile</a>
+                        <a class="hvr-shrink" href="{% url 'accounts:profile' %}">Profile</a>
                       </div>
                       {% else %}
                         <div class="phone_num d-none d-xl-block">
@@ -111,29 +131,28 @@
                   </a>
                 </div>
                 <p>
-                  finloan@support.com <br />
-                  +10 873 672 6782 <br />
-                  600/D, Green road, NewYork
+                  ziadadelhassan@gmail.com <br />
+                  +201024496992 <br />
                 </p>
                 <div class="socail_links">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a target="_blank" href="https://www.facebook.com/ZiadDorrah/">
                         <i class="ti-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a target="_blank" href="https://www.google.com/?hl=ar">
                         <i class="fa fa-google-plus"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a target="_blank" href="https://twitter.com/DorrahZiad">
                         <i class="fa fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a target="_blank" href="https://www.instagram.com/ziad_dorrah/">
                         <i class="fa fa-instagram"></i>
                       </a>
                     </li>
@@ -208,7 +227,7 @@
                 </script>
                 All rights reserved | This template is made with
                 <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <a href="https://www.facebook.com/ZiadDorrah/" target="_blank">Dorrah</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
             </div>
